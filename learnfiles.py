@@ -11,7 +11,7 @@ while True:
     print("**Welcome to Healthy Life System**")
     print("We will take care of your eyes,heart and body hydration\n")
     
-    time.sleep(15)
+    time.sleep(15) #Sleep-time in seconds
     mixer.init()
     mixer.music.load("water.mp3")
     print("Reminder!! Please Drink Water")
@@ -21,7 +21,7 @@ while True:
     mixer.music.stop()
     value = input("Please update your done task\n")
     with open("Water_Intake.txt", "a") as op:
-        op.write(f"{datetime.now()}" + ":" + value + "\n")
+        op.write(f"{datetime.now()}" + ":" + value + "\n") #taking  log of your action that u completed drinking water task.
     print("Successfully updated")
     time.sleep(10)
     mixer.init()
@@ -33,7 +33,7 @@ while True:
     mixer.music.stop()
     value2 = input("Please update your done tasks\n")
     with open("Eyes_Exercise.txt", "a") as op:
-        op.write(str([str(time.ctime())]) + ":" + value2 + "\n")
+        op.write(str([str(time.ctime())]) + ":" + value2 + "\n") #taking  log of your action that u completed Eye-exercise task.
     print("successfully updated")
     time.sleep(15)
     mixer.init()
@@ -47,10 +47,10 @@ while True:
     print("Its time for little pysical exercise")
     value3 = input("Please write your done task\n")
     with open("Physical_Exercise.txt", "a") as op:
-        op.write(str([str(time.ctime())]) + ":" + value3 + "\n")
+        op.write(str([str(time.ctime())]) + ":" + value3 + "\n") #taking  log of your action that u completed physical-exercise task.
     print("successfully updated")
     
-    a=int(input(" Press 1 for continuation and 0 to exit"))
+    a=int(input(" Press 1 for continuation and 0 to exit")) #confirmation to continue the program OR to stop it.
     
     if a==0:
         exit()
