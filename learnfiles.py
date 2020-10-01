@@ -1,3 +1,4 @@
+#Author- Manoj
 #A code which reminds the programmer to drink water,
 # exercise his eyes do little physical activity to reduce fatiguness
 
@@ -55,7 +56,6 @@ while True:
         exit()
     else:
         continue
-
-
+#end of project
 
 
